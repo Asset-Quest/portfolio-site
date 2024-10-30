@@ -74,26 +74,23 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts thumbnail size */
         gap: 15px; /* Adds spacing between items */
     }
-    .gallery-item {
-        width: 100%;
-        height: 250px; /* Sets a consistent height for all thumbnails */
-        overflow: hidden; /* Hides any overflow from images */
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures images fill the container by zooming in as needed */
-        object-position: center; /* Centers the image within the container */
-        display: block;
+     .gallery-item {
+            width: 100%;
+            height: 300px; /* Increase height to make thumbnails larger */
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images fill the container */
+            object-position: center; /* Centers the image within the container */
+            display: block;
         }
 
         @media (max-width: 768px) {
