@@ -47,20 +47,20 @@
         overflow: hidden; /* Ensures any overflow is hidden */
         border: 1px solid #ddd;
         border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center; /* Centers text below the thumbnail */
     }
     .gallery-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Crops image to fit within the container while keeping aspect ratio */
+         object-fit: cover; /* Ensures images fill the container by zooming in as needed */
+        object-position: center; /* Centers the image within the container */
+        display: block;
     }
         }
         .gallery-item h3 {
-            font-size: 1.1em;
-            color: #333;
-            margin: 10px;
+        margin: 10px 0 5px; /* Spacing above and below the title */
+        font-size: 1.1em; /* Font size for title */
+        color: #333; /* Title color */
         }
         .gallery-item p {
             font-size: 0.9em;
