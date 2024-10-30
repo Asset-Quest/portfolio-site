@@ -38,66 +38,75 @@
     <meta name="robots" content="index, follow">
     
     <style>
-        .logo {
-            max-width: 100%; /* Ensures it doesn’t exceed container width */
-            height: auto;    /* Maintains aspect ratio */
-            margin: 0 auto 20px; /* Centers logo and adds spacing below */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        header, footer {
-            text-align: center;
-        }
-        header h1 {
-            color: #4CAF50;
-            font-size: 2em;
-            margin: 0;
-        }
-        p {
-            line-height: 1.6;
-        }
+       .logo {
+    max-width: 100%; /* Ensures it doesn’t exceed container width */
+    height: auto;    /* Maintains aspect ratio */
+    margin: 0 auto 20px; /* Centers logo and adds spacing below */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+header, footer {
+    text-align: center;
+}
+header h1 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin: 0;
+}
+p {
+    line-height: 1.6;
+}
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Defines responsive grid layout */
-            gap: 15px; /* Adds spacing between items */
-        }
+/* Gallery styling */
+.gallery {
+    display: grid;
+    gap: 15px;
+}
 
-        .gallery-item {
-            aspect-ratio: 1; /* Enforces square thumbnail */
-            overflow: hidden; /* Ensures image does not overflow outside border */
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
+.gallery-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts thumbnail size */
+    gap: 15px; /* Adds spacing between items */
+    margin-bottom: 20px; /* Adds space between each gallery group */
+}
 
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures image fills the square without distortion */
-            object-position: center;
-            display: block;
-            border-radius: 8px; /* Matches the gallery item’s border radius */
-        }
+.gallery-item {
+    aspect-ratio: 1; /* Ensures each item is square */
+    overflow: hidden; /* Hides overflow so images don’t extend outside the thumbnail */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    display: block; /* Ensures each item respects its grid layout */
+}
 
-        /* Responsive adjustment */
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: 1fr; /* Stacks gallery items in one column */
-            }
-        }
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the entire thumbnail */
+    object-position: center; /* Centers the image within the thumbnail */
+    display: block;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .gallery-group {
+        grid-template-columns: 1fr; /* Stacks gallery items in one column */
+    }
+}
+
     </style>
 </head>
 
@@ -120,64 +129,68 @@
         </header>
 
 
-        <section class="gallery">
+       <section class="gallery">
+    <!-- Low-Poly Halloween Asset Kit -->
+    <h3>Low-Poly Halloween Spooky Asset Kit</h3>
+    <div class="gallery-group">
+        <div class="gallery-item">
+            <a href="Example_Scene.jpg" target="_blank">
+                <img src="Example_Scene.jpg" alt="Low-Poly Halloween Asset Kit">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Example_Scene_Detail.jpg" target="_blank">
+                <img src="Example_Scene_Detail.jpg" alt="Low-Poly Halloween Asset Kit Detail">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Example_Scene_2.jpg" target="_blank">
+                <img src="Example_Scene_2.jpg" alt="Low-Poly Halloween Asset Kit Scene 2">
+            </a>
+        </div>
+    </div>
 
-            <!-- Low-Poly Halloween Asset Kit -->
-            <h3>Low-Poly Halloween Spooky Asset Kit</h3>
-            <div class="gallery-item">
-                <a href="Example_Scene.jpg" target="_blank">
-                    <img src="Example_Scene.jpg" alt="Low-Poly Halloween Asset Kit">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Example_Scene_Detail.jpg" target="_blank">
-                    <img src="Example_Scene_Detail.jpg" alt="Low-Poly Halloween Asset Kit Detail">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Example_Scene_2.jpg" target="_blank">
-                    <img src="Example_Scene_2.jpg" alt="Low-Poly Halloween Asset Kit Scene 2">
-                </a>
-            </div>
+    <!-- Free Mushroom Kit -->
+    <h3>Asset Pack: Low-Poly Stylized Mushroom Kit</h3>
+    <div class="gallery-group">
+        <div class="gallery-item">
+            <a href="Free_Mushroom_Kit_1.jpg" target="_blank">
+                <img src="Free_Mushroom_Kit_1.jpg" alt="Free Mushroom Kit - Scene 1">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Free_Mushroom_Kit_2.jpg" target="_blank">
+                <img src="Free_Mushroom_Kit_2.jpg" alt="Free Mushroom Kit - Scene 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Free_Mushroom_Kit_3.jpg" target="_blank">
+                <img src="Free_Mushroom_Kit_3.jpg" alt="Free Mushroom Kit - Scene 3">
+            </a>
+        </div>
+    </div>
 
-            <!-- Free Mushroom Kit -->
-            <h3>Asset Pack: Low-Poly Stylized Mushroom Kit</h3>
-             <p> </p>
-            <div class="gallery-item">
-                <a href="Free_Mushroom_Kit_1.jpg" target="_blank">
-                    <img src="Free_Mushroom_Kit_1.jpg" alt="Free Mushroom Kit - Scene 1">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Free_Mushroom_Kit_2.jpg" target="_blank">
-                    <img src="Free_Mushroom_Kit_2.jpg" alt="Free Mushroom Kit - Scene 2">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Free_Mushroom_Kit_3.jpg" target="_blank">
-                    <img src="Free_Mushroom_Kit_3.jpg" alt="Free Mushroom Kit - Scene 3">
-                </a>
-            </div>
+    <!-- Semi-Realistic Mushroom Kit -->
+    <h3>Asset Pack: Semi-Realistic, High Detail Premium Mushroom Kit</h3>
+    <div class="gallery-group">
+        <div class="gallery-item">
+            <a href="Semi_Realistic_Mushroom_Kit_1.jpg" target="_blank">
+                <img src="Semi_Realistic_Mushroom_Kit_1.jpg" alt="Semi-Realistic Mushroom Kit - Scene 1">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Semi_Realistic_Mushroom_Kit_2.jpg" target="_blank">
+                <img src="Semi_Realistic_Mushroom_Kit_2.jpg" alt="Semi-Realistic Mushroom Kit - Scene 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="Semi_Realistic_Mushroom_Kit_3.jpg" target="_blank">
+                <img src="Semi_Realistic_Mushroom_Kit_3.jpg" alt="Semi-Realistic Mushroom Kit - Scene 3">
+            </a>
+        </div>
+    </div>
+</section>
 
-            <!-- Semi-Realistic Mushroom Kit -->
-            <h3>Asset Pack: Semi-Realistic, High Detail Premium Mushroom Kit</h3>
-            <div class="gallery-item">
-                <a href="Semi_Realistic_Mushroom_Kit_1.jpg" target="_blank">
-                    <img src="Semi_Realistic_Mushroom_Kit_1.jpg" alt="Semi-Realistic Mushroom Kit - Scene 1">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Semi_Realistic_Mushroom_Kit_2.jpg" target="_blank">
-                    <img src="Semi_Realistic_Mushroom_Kit_2.jpg" alt="Semi-Realistic Mushroom Kit - Scene 2">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="Semi_Realistic_Mushroom_Kit_3.jpg" target="_blank">
-                    <img src="Semi_Realistic_Mushroom_Kit_3.jpg" alt="Semi-Realistic Mushroom Kit - Scene 3">
-                </a>
-            </div>
-            
-        </section>
 
 
         <h3>Contact and Support</h3>
