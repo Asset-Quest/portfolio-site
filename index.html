@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AssetQuest - 3D Artist Portfolio</title>
     <style>
-          .logo {
-        max-width: 100%; /* Ensures it doesn’t exceed container width */
-        height: auto;    /* Maintains aspect ratio */
-        margin: 0 auto 20px; /* Centers logo and adds spacing below */
-    }
+        .logo {
+            max-width: 100%; /* Ensures it doesn’t exceed container width */
+            height: auto;    /* Maintains aspect ratio */
+            margin: 0 auto 20px; /* Centers logo and adds spacing below */
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -36,34 +36,34 @@
         p {
             line-height: 1.6;
         }
-       .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
-        gap: 10px; /* Adds spacing between items */
-    }
-    .gallery-item {
-         border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        text-align: center; /* Centers text below the thumbnail */
-        padding: 10px; /* Adds some padding inside the item */
-    }
-    .gallery-item img {
-        width: 100%;
-        height: 100%;
-         object-fit: cover; /* Ensures images fill the container by zooming in as needed */
-        object-position: center; /* Centers the image within the container */
-        display: block;
-    }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+            gap: 10px; /* Adds spacing between items */
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center; /* Centers text below the thumbnail */
+            padding: 10px; /* Adds some padding inside the item */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images fill the container by zooming in as needed */
+            object-position: center; /* Centers the image within the container */
+            display: block;
+        }
         .gallery-item h3 {
-        margin: 10px 0 5px; /* Spacing above and below the title */
-        font-size: 1.1em; /* Font size for title */
-        color: #333; /* Title color */
-    }
-    .gallery-item p {
-        margin: 0 0 10px; /* Spacing below the description */
-        font-size: 0.9em; /* Font size for description */
-        color: #666; /* Description color */
+            margin: 10px 0 5px; /* Spacing above and below the title */
+            font-size: 1.1em; /* Font size for title */
+            color: #333; /* Title color */
+        }
+        .gallery-item p {
+            margin: 0 0 10px; /* Spacing below the description */
+            font-size: 0.9em; /* Font size for description */
+            color: #666; /* Description color */
         }
         footer a {
             color: #4CAF50;
@@ -74,36 +74,38 @@
 <body>
     <div class="container">
         <header>
-             <img src="Asset_Quest_Logo_wide.png" alt="" class="logo">
+            <img src="Asset_Quest_Logo_wide.png" alt="AssetQuest Logo" class="logo">
             <p>Welcome to my portfolio! I am a 3D artist with a focus on vegetation and props, creating asset packs and environment art. </p>
         </header>
 
         <section class="gallery">
             <div class="gallery-item">
                 <a href="Example_Scene.jpg" target="_blank">
-                <img src="Example_Scene.jpg" alt="">
-                    </a>
+                    <img src="Example_Scene.jpg" alt="Low-Poly Halloween Asset Kit">
+                </a>
                 <h3>Low-Poly Halloween Asset Kit</h3>
                 <p>Example Scene</p>
             </div>
             <div class="gallery-item">
-                 <a href="Example_Scene_Detail.jpg" target="_blank">
-                 <img src="Example_Scene_Detail.jpg" alt="">
-                     </a>
-                  <h3>Low-Poly Halloween Asset Kit</h3>
+                <a href="Example_Scene_Detail.jpg" target="_blank">
+                    <img src="Example_Scene_Detail.jpg" alt="Low-Poly Halloween Asset Kit Detail">
+                </a>
+                <h3>Low-Poly Halloween Asset Kit Detail</h3>
                 <p>Example Scene Detail</p>
             </div>
-             <div class="gallery-item">
-                  <a href="Example_Scene_2.jpg" target="_blank">
-                 <img src="Example_Scene_2.jpg" alt="">
-                      </a>
-                  <h3>Low-Poly Halloween Asset Kit</h3>
+            <div class="gallery-item">
+                <a href="Example_Scene_2.jpg" target="_blank">
+                    <img src="Example_Scene_2.jpg" alt="Low-Poly Halloween Asset Kit Scene 2">
+                </a>
+                <h3>Low-Poly Halloween Asset Kit Scene 2</h3>
                 <p>Example Scene 2</p>
+            </div>
             <!-- Add more gallery items as needed -->
         </section>
-              <footer>
-    <p>Contact me: assetquest[at]protonmail.com</p>
-</footer>
+
+        <footer>
+            <p>Contact me: assetquest[at]protonmail.com</p>
+        </footer>
     </div>
 </body>
 </html>
