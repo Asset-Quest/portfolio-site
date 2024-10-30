@@ -48,9 +48,15 @@
             border-radius: 8px;
             overflow: hidden;
         }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
+       .gallery-item img {
+        width: 100%; /* Makes the image fill the gallery item width */
+        height: auto; /* Maintains aspect ratio */
+        max-width: 300px; /* Sets maximum width for thumbnails */
+        max-height: 200px; /* Sets maximum height for thumbnails */
+        object-fit: cover; /* Ensures the image fills the max size without distortion */
+        display: block;
+        margin: 0 auto; /* Centers the image in the gallery item */
+    }
         }
         .gallery-item h3 {
             font-size: 1.1em;
