@@ -70,33 +70,26 @@
             line-height: 1.6;
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
-            gap: 10px; /* Adds spacing between items */
-        }
-        .gallery-item {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center; /* Centers text below the thumbnail */
-            padding: 10px; /* Adds some padding inside the item */
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures images fill the container by zooming in as needed */
-            object-position: center; /* Centers the image within the container */
-            display: block;
-        }
-        .gallery-item h3 {
-            margin: 10px 0 5px; /* Spacing above and below the title */
-            font-size: 1.1em; /* Font size for title */
-            color: #333; /* Title color */
-        }
-        .gallery-item p {
-            margin: 0 0 10px; /* Spacing below the description */
-            font-size: 0.9em; /* Font size for description */
-            color: #666; /* Description color */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts thumbnail size */
+        gap: 15px; /* Adds spacing between items */
+    }
+    .gallery-item {
+        width: 100%;
+        height: 250px; /* Sets a consistent height for all thumbnails */
+        overflow: hidden; /* Hides any overflow from images */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures images fill the container by zooming in as needed */
+        object-position: center; /* Centers the image within the container */
+        display: block;
         }
         footer a {
             color: #4CAF50;
